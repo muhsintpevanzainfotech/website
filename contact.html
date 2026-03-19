@@ -138,21 +138,21 @@
           </div>
           <div class="p-8 bg-white rounded-2xl shadow-md">
             <div>
-              <form action="#!">
+              <form action="https://formspree.io/f/maqpvknw" method="POST">
                 <label class="block pl-4 mb-1 text-sm font-medium" for="">Full Name</label>
                 <input
                   class="w-full px-4 py-3 mb-6 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full"
-                  type="text" />
+                  type="text" name="fullName" required="required" />
                 <label class="block pl-4 mb-1 text-sm font-medium" for="">Email</label>
                 <input
                   class="w-full px-4 py-3 mb-6 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full"
-                  type="text" />
+                  type="email" name="email" required="required" />
                 <label class="block pl-4 mb-1 text-sm font-medium" for=""><span>Company</span>
                   <span class="text-gray-700">(optional)</span>
                 </label>
                 <input
                   class="w-full px-4 py-3 mb-6 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full"
-                  type="text" />
+                  type="text" name="company" />
                 <label class="block pl-4 mb-1 text-sm font-medium" for="">Service</label>
                 <div class="relative w-full mb-8 bg-white rounded-full"><span
                     class="absolute top-1/2 right-0 mr-4 transform -translate-y-1/2">
@@ -162,12 +162,20 @@
                     </svg></span>
                   <select
                     class="w-full px-4 py-3 text-gray-600 border rounded-full appearance-none cursor-pointer outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 bg-transparent relative"
-                    name="" id="">
-                    <option value="1">Select service</option>
-                    <option value="2">Sales</option>
-                    <option value="3">Marketing</option>
+                    name="service" id="service" required="required">
+                    <option value="">Select service</option>
+                    <option value="Website Development">Website Development</option>
+                    <option value="App Development">App Development</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="SEO">SEO</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Design">Design</option>
                   </select>
                 </div>
+                <label class="block pl-4 mb-1 text-sm font-medium" for="message">Message</label>
+                <textarea
+                  class="w-full px-4 py-3 mb-8 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-2xl"
+                  name="message" id="message" rows="4" placeholder="How can we help you?" required="required"></textarea>
                 <button
                   class="flex w-full py-3 px-5 items-center justify-center font-medium text-white hover:text-teal-900 border border-teal-900 hover:border-lime-500 bg-teal-900 hover:bg-lime-500 rounded-full transition duration-200"><span
                     class="mr-2">Submit</span>
