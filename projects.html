@@ -11,13 +11,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
   <!-- 10/10 SEO Optimization Start -->
-  <meta name="description" content="Explore the diverse portfolio of Evanzainfotech. From high-end e-commerce platforms to sleek mobile apps and effective SEO strategies, see how we deliver digital excellence." />
-  <meta name="keywords" content="Portfolio, Digital Projects, Web Development Showcase, App Development, SEO Case Studies, Evanzainfotech Projects" />
+  <meta name="description"
+    content="Explore the diverse portfolio of Evanzainfotech. From high-end e-commerce platforms to sleek mobile apps and effective SEO strategies, see how we deliver digital excellence." />
+  <meta name="keywords"
+    content="Portfolio, Digital Projects, Web Development Showcase, App Development, SEO Case Studies, Evanzainfotech Projects" />
   <meta name="author" content="Evanzainfotech" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.evanzainfotech.cloud/projects.html" />
   <meta property="og:title" content="Our Projects | Evanzainfotech Portfolio" />
-  <meta property="og:description" content="Discover our latest work in web development, app design, and digital marketing. Transforming businesses with innovative solutions." />
+  <meta property="og:description"
+    content="Discover our latest work in web development, app design, and digital marketing. Transforming businesses with innovative solutions." />
   <meta property="og:url" content="https://www.evanzainfotech.cloud/projects.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.evanzainfotech.cloud/images/logo-with-letter.png" />
@@ -120,35 +123,45 @@
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto text-center mb-16">
           <h1 class="font-heading text-5xl sm:text-6xl md:text-7xl tracking-tight mb-8">Our Portfolio</h1>
-          <p class="text-xl text-gray-700 font-medium italic">Transforming vision into digital reality. Explore our latest works across various industries.</p>
+          <p class="text-xl text-gray-700 font-medium italic">Transforming vision into digital reality. Explore our
+            latest works across various industries.</p>
         </div>
-        
+
         <div class="flex flex-wrap -mx-4">
           <template x-for="(project, index) in projects" :key="project.id">
-            <div class="w-full md:w-1/2 px-4 mb-24" 
-                 x-data="{ show: false }" 
-                 x-init="setTimeout(() => show = true, index * 100)"
-                 x-show="show"
-                 x-transition:enter="transition ease-out duration-700"
-                 x-transition:enter-start="opacity-0 translate-y-12"
-                 x-transition:enter-end="opacity-100 translate-y-0">
+            <div class="w-full md:w-1/2 px-4 mb-24" x-data="{ show: false }"
+              x-init="setTimeout(() => show = true, index * 100)" x-show="show"
+              x-transition:enter="transition ease-out duration-700" x-transition:enter-start="opacity-0 translate-y-12"
+              x-transition:enter-end="opacity-100 translate-y-0">
               <div class="group block cursor-pointer">
                 <div class="relative h-80 lg:h-96 w-full rounded-3xl overflow-hidden shadow-2xl mb-8">
-                  <img class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" :src="project.img" :alt="project.title" />
-                  <div class="absolute inset-0 bg-teal-900 opacity-0 group-hover:opacity-20 transition duration-500"></div>
+                  <img class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                    :src="project.img" :alt="project.title" />
+                  <div class="absolute inset-0 bg-teal-900 opacity-0 group-hover:opacity-20 transition duration-500">
+                  </div>
                   <!-- Floating Label on Hover -->
-                  <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
-                    <span class="py-3 px-6 bg-white text-teal-900 font-bold rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition duration-500">View Details</span>
+                  <div
+                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                    <span
+                      class="py-3 px-6 bg-white text-teal-900 font-bold rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition duration-500">View
+                      Details</span>
                   </div>
                 </div>
                 <div>
-                  <span class="inline-block py-1 px-4 mb-4 text-xs font-bold text-teal-900 bg-lime-500 rounded-full uppercase tracking-widest" x-text="project.category"></span>
-                  <h3 class="text-3xl lg:text-4xl font-bold text-teal-900 mb-4 group-hover:text-lime-600 transition duration-200" x-text="project.title"></h3>
+                  <span
+                    class="inline-block py-1 px-4 mb-4 text-xs font-bold text-teal-900 bg-lime-500 rounded-full uppercase tracking-widest"
+                    x-text="project.category"></span>
+                  <h3
+                    class="text-3xl lg:text-4xl font-bold text-teal-900 mb-4 group-hover:text-lime-600 transition duration-200"
+                    x-text="project.title"></h3>
                   <p class="text-lg text-gray-600 leading-relaxed mb-6 lg:max-w-lg" x-text="project.desc"></p>
-                  <div class="flex items-center text-teal-900 font-bold group-hover:translate-x-2 transition-transform duration-300">
+                  <div
+                    class="flex items-center text-teal-900 font-bold group-hover:translate-x-2 transition-transform duration-300">
                     <span class="border-b-2 border-lime-500 pb-1">View Case Study</span>
-                    <svg class="ml-3 transition-transform duration-300 group-hover:rotate-45" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <svg class="ml-3 transition-transform duration-300 group-hover:rotate-45" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
                     </svg>
                   </div>
                 </div>
@@ -164,8 +177,10 @@
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="font-heading text-4xl sm:text-6xl text-white mb-8">Ready to start your next project?</h2>
-          <p class="text-xl text-white opacity-80 mb-10">Let's collaborate to build something extraordinary together. Our team is ready to bring your ideas to life.</p>
-          <a class="inline-flex py-4 px-8 items-center justify-center text-lg font-bold text-teal-900 bg-lime-500 hover:bg-white rounded-full transition duration-200" href="contact.html">Get Started Today</a>
+          <p class="text-xl text-white opacity-80 mb-10">Let's collaborate to build something extraordinary together.
+            Our team is ready to bring your ideas to life.</p>
+          <a class="inline-flex py-4 px-8 items-center justify-center text-lg font-bold text-teal-900 bg-lime-500 hover:bg-white rounded-full transition duration-200"
+            href="contact.html">Get Started Today</a>
         </div>
       </div>
     </section>
@@ -242,7 +257,7 @@
               <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
-                    fill="currentColor"></path>
+                  fill="currentColor"></path>
               </svg></a> <a class="inline-block text-black hover:text-lime-500" href="#">
               <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -251,8 +266,8 @@
               </svg></a></div>
           <div class="text-center">Created by <a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
               href="https://www.evanzainfotech.cloud" target="_blank">Evanzainfotech</a><span> • Distributed by
-            </span><a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
-              href="https://www.ThemeWagon.store" target="_blank">ThemeWagon</a></div>
+            </span><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="https://www.MJ1999.store"
+              target="_blank">MJ1999</a></div>
           <p class="text-sm text-gray-500 mb-3">© 2024 Evanzainfotech. All rights reserved.</p>
         </div>
       </div>
