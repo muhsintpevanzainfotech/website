@@ -36,69 +36,79 @@
   <div>
 
     <div>
-    <section class="overflow-hidden" x-data="{ mobileNavOpen: false }">
-      <nav class="mx-4 py-6 border-b">
-        <div class="container mx-auto px-4">
-          <div class="relative flex items-center justify-between"><a class="inline-block" href="index.html"><img
-                class="h-8" src="images/logo-with-letter.png" alt="" /></a>
-            <ul class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex">
-                <li class="mr-4 lg:mr-8"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="about.html">About us</a></li>
-                <li class="mr-4 lg:mr-8"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="projects.html">Projects</a></li>
-                <li class="mr-4 lg:mr-8"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="pricing.html">Pricing</a></li>
-                <li class="mr-4 lg:mr-8"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="blog.html">Blog</a></li>
-                <li><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="contact.html">Contact us</a></li>
-            </ul>
-            <div class="flex items-center justify-end">
-              <div class="hidden md:block">
-                <div class="hidden md:block"><a
-                    class="inline-flex py-2.5 px-4 mr-3 lg:mr-4 items-center justify-center text-sm font-medium text-teal-900 border border-teal-900 hover:bg-teal-900 hover:text-white rounded-full transition duration-200"
-                    href="login.html">Login</a><a
-                    class="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-white border border-teal-900 hover:border-black bg-teal-900 hover:bg-black rounded-full transition duration-200"
-                    href="contact.html">Get in touch</a></div>
+      <section class="overflow-hidden" x-data="{ mobileNavOpen: false }">
+        <nav class="mx-4 py-6 border-b">
+          <div class="container mx-auto px-4">
+            <div class="relative flex items-center justify-between"><a class="inline-block" href="index.html"><img
+                  class="h-8" src="images/logo-with-letter.png" alt="" /></a>
+              <ul class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex">
+                <li class="mr-4 lg:mr-8"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                    href="about.html">About us</a></li>
+                <li class="mr-4 lg:mr-8"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                    href="projects.html">Projects</a></li>
+                <li class="mr-4 lg:mr-8"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                    href="pricing.html">Pricing</a></li>
+                <li class="mr-4 lg:mr-8"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                    href="blog.html">Blog</a></li>
+                <li><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="contact.html">Contact
+                    us</a></li>
+              </ul>
+              <div class="flex items-center justify-end">
+                <div class="hidden md:block">
+                  <div class="hidden md:block"><a
+                      class="inline-flex py-2.5 px-4 mr-3 lg:mr-4 items-center justify-center text-sm font-medium text-teal-900 border border-teal-900 hover:bg-teal-900 hover:text-white rounded-full transition duration-200"
+                      href="login.html">Login</a><a
+                      class="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-white border border-teal-900 hover:border-black bg-teal-900 hover:bg-black rounded-full transition duration-200"
+                      href="contact.html">Get in touch</a></div>
+                </div>
+                <button class="md:hidden text-teal-900 hover:text-teal-800" x-on:click="mobileNavOpen = !mobileNavOpen">
+                  <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.19995 23.2H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <path d="M5.19995 16H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <path d="M5.19995 8.79999H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </button>
               </div>
-              <button class="md:hidden text-teal-900 hover:text-teal-800" x-on:click="mobileNavOpen = !mobileNavOpen">
-                <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.19995 23.2H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                  <path d="M5.19995 16H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                  <path d="M5.19995 8.79999H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                </svg>
-              </button>
             </div>
-          </div>
-        </div>
-      </nav>
-      <div class="hidden fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50"
-        :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}">
-        <div class="fixed inset-0 bg-violet-900 opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
-        <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
-          <div class="flex items-center justify-between"><a class="inline-block" href="index.html"><img class="h-8"
-                src="images/logo-with-letter.png" alt="" /></a>
-            <div class="flex items-center"><a
-                class="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200"
-                href="login.html">Login</a>
-              <button class="ml-6" x-on:click="mobileNavOpen = !mobileNavOpen">
-                <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2" stroke="#1D1F1E" stroke-width="1.5"
-                    stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="pt-20 pb-12 mb-auto">
-            <ul class="flex-col">
-              <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="about.html">About us</a></li>
-              <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="projects.html">Projects</a></li>
-              <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="pricing.html">Pricing</a></li>
-              <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="blog.html">Blog</a></li>
-              <li><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="contact.html">Contact us</a></li>
-            </ul>
           </div>
         </nav>
-      </div>
-    </section>
+        <div class="hidden fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50"
+          :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}">
+          <div class="fixed inset-0 bg-violet-900 opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
+          <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
+            <div class="flex items-center justify-between"><a class="inline-block" href="index.html"><img class="h-8"
+                  src="images/logo-with-letter.png" alt="" /></a>
+              <div class="flex items-center"><a
+                  class="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200"
+                  href="login.html">Login</a>
+                <button class="ml-6" x-on:click="mobileNavOpen = !mobileNavOpen">
+                  <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2" stroke="#1D1F1E" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="pt-20 pb-12 mb-auto">
+              <ul class="flex-col">
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                    href="about.html">About us</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                    href="projects.html">Projects</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                    href="pricing.html">Pricing</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                    href="blog.html">Blog</a></li>
+                <li><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="contact.html">Contact
+                    us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
     </div>
     <section class="relative py-12 lg:py-24 overflow-hidden"><img class="absolute top-0 right-0"
         src="fauna-assets/pricing/waves-right-top.png" alt="" />
@@ -222,30 +232,44 @@
               <div class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0">
                 <h3 class="mb-6 font-bold">Platform</h3>
                 <ul>
-                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="index.html#solutions">Solutions</a></li>
-                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="projects.html">Projects</a></li>
-                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="pricing.html">Pricing</a></li>
-                  <li><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="contact.html">Contact Us</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="index.html#solutions">Solutions</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="projects.html">Projects</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="pricing.html">Pricing</a></li>
+                  <li><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="contact.html">Contact
+                      Us</a></li>
                 </ul>
               </div>
               <div class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0">
                 <h3 class="mb-6 font-bold">Courses</h3>
                 <ul>
-                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="courses.html">MERN Stack</a></li>
-                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="courses.html">Database</a></li>
-                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="courses.html">Mobile App</a></li>
-                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="courses.html">SEO Analysis</a></li>
-                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="courses.html">Digital Marketing</a></li>
-                  <li><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="courses.html">Social Media</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">MERN Stack</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">Database</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">Mobile App</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">SEO Analysis</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">Digital Marketing</a></li>
+                  <li><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="courses.html">Social
+                      Media</a></li>
                 </ul>
               </div>
               <div class="w-full xs:w-1/3 px-4">
                 <h3 class="mb-6 font-bold">Company</h3>
                 <ul>
-                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="about.html">About Us</a></li>
-                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="blog.html">Blog</a></li>
-                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="about.html#mission">Our Mission</a></li>
-                  <li><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="contact.html">Careers</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="about.html">About Us</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="blog.html">Blog</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="about.html#mission">Our Mission</a></li>
+                  <li><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="contact.html">Careers</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -253,10 +277,14 @@
           <div class="w-full md:w-5/12 lg:w-4/12 px-4">
             <div class="max-w-sm p-8 bg-teal-900 rounded-2xl mx-auto md:mr-0">
               <h5 class="text-xl font-medium text-white mb-4">Elevate Your Presence</h5>
-              <p class="text-sm text-white opacity-80 leading-normal mb-8">Subscribe to get the latest digital trends and agency updates delivered to your inbox.</p>
+              <p class="text-sm text-white opacity-80 leading-normal mb-8">Subscribe to get the latest digital trends
+                and agency updates delivered to your inbox.</p>
               <div class="flex flex-col">
-                <input class="h-12 w-full px-4 py-1 mb-3 bg-white/10 text-white placeholder-gray-400 border border-white/20 focus:ring-2 focus:ring-lime-500 rounded-full" type="email" placeholder="Your e-mail..." />
-                <button class="h-12 inline-flex items-center justify-center font-bold text-teal-900 bg-lime-500 hover:bg-white rounded-full transition duration-200">Subscribe</button>
+                <input
+                  class="h-12 w-full px-4 py-1 mb-3 bg-white/10 text-white placeholder-gray-400 border border-white/20 focus:ring-2 focus:ring-lime-500 rounded-full"
+                  type="email" placeholder="Your e-mail..." />
+                <button
+                  class="h-12 inline-flex items-center justify-center font-bold text-teal-900 bg-lime-500 hover:bg-white rounded-full transition duration-200">Subscribe</button>
               </div>
             </div>
           </div>
@@ -266,7 +294,8 @@
             <p class="text-sm text-gray-500 font-medium">© 2024 Evanzainfotech. All rights reserved.</p>
           </div>
           <div class="text-center md:text-right">
-            <span class="text-sm text-gray-500">Created by <a class="text-gray-600 hover:text-lime-500 font-bold" href="https://www.evanzainfotech.cloud">Evanzainfotech</a></span>
+            <span class="text-sm text-gray-500">Created by <a class="text-gray-600 hover:text-lime-500 font-bold"
+                href="https://www.evanzainfotech.cloud">Evanzainfotech</a></span>
           </div>
         </div>
       </div>
