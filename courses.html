@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Courses | Evanzainfotech | Elite Digital Learning</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/tailwind/tailwind.min.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <script src="https://unpkg.com/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
+  <style>
+    .course-card {
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border: 1px solid rgba(2, 44, 34, 0.05);
+    }
+
+    .course-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 40px 70px -15px rgba(2, 44, 34, 0.12);
+      border-color: #84cc16;
+    }
+
+    .course-icon-container {
+      transition: all 0.3s ease;
+    }
+
+    .course-card:hover .course-icon-container {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #022c22 0%, #164e63 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-pattern {
+      background-image: radial-gradient(#84cc16 0.5px, transparent 0.5px);
+      background-size: 24px 24px;
+      opacity: 0.1;
+    }
+  </style>
+  <!-- 10/10 SEO Optimization Start -->
+  <meta name="description"
+    content="Explore Evanzainfotech's elite course materials. Master MERN Stack, Database management, Mobile App Development (Flutter & React Native), SEO, and Digital Marketing." />
+  <meta name="keywords"
+    content="MERN Stack Course, Database Training, Flutter Development, React Native, SEO Analysis, Digital Marketing Course, Evanzainfotech Learning" />
+  <meta name="author" content="Evanzainfotech" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.evanzainfotech.cloud/courses.html" />
+  <!-- 10/10 SEO Optimization End -->
+</head>
+
+<body class="antialiased bg-body text-body font-body">
+  <div>
+    <section class="overflow-hidden" x-data="{ mobileNavOpen: false }">
+      <nav class="mx-4 py-6 border-b">
+        <div class="container mx-auto px-4">
+          <div class="relative flex items-center justify-between"><a class="inline-block" href="index.html"><img
+                class="h-8" src="images/logo-with-letter.png" alt="" /></a>
+            <ul class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex">
+              <li class="mr-4 lg:mr-8"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                  href="about.html">About us</a></li>
+              <li class="mr-4 lg:mr-8"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                  href="projects.html">Projects</a></li>
+              <li class="mr-4 lg:mr-8"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                  href="pricing.html">Pricing</a></li>
+              <li class="mr-4 lg:mr-8"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                  href="blog.html">Blog</a></li>
+              <li><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="contact.html">Contact
+                  us</a></li>
+            </ul>
+            <div class="flex items-center justify-end">
+              <div class="hidden md:block">
+                <div class="hidden md:block"><a
+                    class="inline-flex py-2.5 px-4 mr-3 lg:mr-4 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200"
+                    href="login.html">Login</a><a
+                    class="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-white border border-teal-900 hover:border-black bg-teal-900 hover:bg-black rounded-full transition duration-200"
+                    href="contact.html">Get in touch</a></div>
+              </div>
+              <button class="md:hidden text-teal-900 hover:text-teal-800" x-on:click="mobileNavOpen = !mobileNavOpen">
+                <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19995 23.2H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path d="M5.19995 16H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path d="M5.19995 8.79999H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="hidden fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50"
+        :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}">
+        <div class="fixed inset-0 bg-violet-900 opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
+        <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
+          <div class="flex items-center justify-between"><a class="inline-block" href="index.html"><img class="h-8"
+                src="fauna-assets/logos/sign-logo-flow.svg" alt="" /></a>
+            <div class="flex items-center"><a
+                class="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200"
+                href="login.html">Login</a>
+              <button class="ml-6" x-on:click="mobileNavOpen = !mobileNavOpen">
+                <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2" stroke="#1D1F1E" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="pt-20 pb-12 mb-auto">
+            <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                href="about.html">About us</a></li>
+            <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                href="projects.html">Projects</a></li>
+            <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                href="pricing.html">Pricing</a></li>
+            <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                href="blog.html">Blog</a></li>
+            <li><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="contact.html">Contact us</a>
+            </li>
+          </div>
+        </nav>
+      </div>
+
+      <div class="relative py-24 bg-white overflow-hidden">
+        <div class="absolute inset-0 hero-pattern"></div>
+        <img class="absolute top-0 right-0 h-full w-auto opacity-20" src="fauna-assets/projects/waves-right.png"
+          alt="" />
+        <div class="container mx-auto px-4 relative">
+          <div class="max-w-3xl mx-auto text-center">
+            <span
+              class="inline-block py-2 px-4 mb-6 text-xs font-bold text-teal-900 bg-lime-400 bg-opacity-30 rounded-full uppercase tracking-widest border border-lime-500">Elite
+              Learning Center</span>
+            <h1 class="font-heading text-6xl sm:text-7xl text-teal-900 mb-8 leading-tight">Master the <span
+                class="gradient-text">Future</span> of Tech</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">Elevate your career with our
+              industry-leading course materials. Expertly crafted for the next generation of digital innovators.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Grid Section -->
+    <section class="py-24 bg-white" x-data="{
+        courses: [
+            { 
+                title: 'MERN Stack Development', 
+                category: 'Web Development', 
+                desc: 'Become a Full-Stack expert with MongoDB, Express, React, and Node.js.', 
+                icon: 'M2 13h10M2 6h15M2 20h20',
+                color: 'bg-blue-50'
+            },
+            { 
+                title: 'Advanced Database Systems', 
+                category: 'Data Science', 
+                desc: 'Master SQL and NoSQL database design, optimization, and scaling.', 
+                icon: 'M12 2v20M2 12h20',
+                color: 'bg-purple-50'
+            },
+            { 
+                title: 'Flutter Mobile Apps', 
+                category: 'Mobile Dev', 
+                desc: 'Build beautiful, natively compiled applications for mobile from a single codebase.', 
+                icon: 'M12 19V5m-7 7l7-7 7 7',
+                color: 'bg-teal-50'
+            },
+            { 
+                title: 'React Native Expert', 
+                category: 'Mobile Dev', 
+                desc: 'Create high-performance iOS and Android apps using your React skills.', 
+                icon: 'M4 4h16v16H4z',
+                color: 'bg-indigo-50'
+            },
+            { 
+                title: 'SEO Analysis & Strategy', 
+                category: 'Marketing', 
+                desc: 'Unlock organic growth with advanced technical SEO and content audit techniques.', 
+                icon: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z',
+                color: 'bg-lime-50'
+            },
+            { 
+                title: 'Digital Marketing Mastery', 
+                category: 'Marketing', 
+                desc: 'Drive ROI with data-driven marketing across search, social, and email.', 
+                icon: 'M13 10V3L4 14h7v7l9-11h-7z',
+                color: 'bg-orange-50'
+            },
+            { 
+                title: 'Social Media Strategy', 
+                category: 'Marketing', 
+                desc: 'Build a powerful brand presence and community across all social platforms.', 
+                icon: 'M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z',
+                color: 'bg-pink-50'
+            }
+        ]
+    }">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap -mx-4">
+          <template x-for="course in courses">
+            <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
+              <div
+                class="course-card h-full p-10 rounded-[2.5rem] border border-gray-100 bg-white hover:border-lime-500 hover:shadow-2xl transition duration-500 group transform">
+                <div
+                  :class="'course-icon-container inline-flex w-16 h-16 items-center justify-center rounded-2xl mb-8 transition duration-300 ' + course.color">
+                  <svg width="32" height="32" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="text-teal-900">
+                    <path :d="course.icon"></path>
+                  </svg>
+                </div>
+                <div class="flex items-center mb-4">
+                  <span
+                    class="inline-block py-1 px-3 text-[10px] font-bold text-teal-900 bg-lime-400 bg-opacity-20 rounded-lg uppercase tracking-widest border border-lime-200"
+                    x-text="course.category"></span>
+                </div>
+                <h3 class="text-2xl font-bold text-teal-900 mb-4 group-hover:text-lime-600 transition duration-300"
+                  x-text="course.title"></h3>
+                <p class="text-gray-600 mb-10 leading-relaxed text-sm lg:text-base" x-text="course.desc"></p>
+                <div class="pt-6 border-t border-gray-50 mt-auto">
+                  <a class="inline-flex w-full py-4 px-6 items-center justify-center text-sm font-bold text-teal-900 border border-teal-900 hover:bg-teal-900 hover:text-white rounded-full transition duration-300 group"
+                    href="contact.html">
+                    <span>Get Started</span>
+                    <svg class="ml-2 transform group-hover:translate-x-1 transition-transform duration-200" width="18"
+                      height="18" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-12 lg:py-24 bg-orange-50 overflow-hidden"><img class="absolute bottom-0 left-0"
+        src="fauna-assets/footer/waves-lines-left-bottom.png" alt="" />
+      <div class="container px-4 mx-auto relative">
+        <div class="flex flex-wrap mb-16 -mx-4">
+          <div class="w-full lg:w-2/12 xl:w-2/12 px-4 mb-16 lg:mb-0"><a class="inline-block mb-4" href="index.html"><img
+                src="images/logo-with-letter.png" alt="" /></a></div>
+          <div class="w-full md:w-7/12 lg:w-6/12 px-4 mb-16 lg:mb-0">
+            <div class="flex flex-wrap -mx-4">
+              <div class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0">
+                <h3 class="mb-6 font-bold">Platform</h3>
+                <ul>
+                  <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
+                      href="index.html#solutions">Solutions</a></li>
+                  <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
+                      href="projects.html">Projects</a></li>
+                  <li class="mb-4"><a class="inline-block text-lime-500 font-medium" href="courses.html">Courses</a>
+                  </li>
+                  <li><a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
+                      href="pricing.html">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0">
+                <h3 class="mb-6 font-bold">Courses</h3>
+                <ul>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">MERN Stack</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">Database</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">Mobile App (Flutter & React Native)</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">SEO Analysis</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">Digital Marketing</a></li>
+                  <li><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="courses.html">Social
+                      Media</a></li>
+                </ul>
+              </div>
+              <div class="w-full xs:w-1/3 px-4">
+                <h3 class="mb-6 font-bold">Company</h3>
+                <ul>
+                  <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="about.html">About Us</a></li>
+                  <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="blog.html">Blog</a></li>
+                  <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="about.html#mission">Our Mission</a></li>
+                  <li><a class="inline-block text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="contact.html">Careers</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-5/12 lg:w-4/12 px-4">
+            <div class="max-w-sm p-8 bg-teal-900 rounded-2xl mx-auto md:mr-0">
+              <h5 class="text-xl font-medium text-white mb-4">Your Source for Digital Marketing Updates</h5>
+              <p class="text-sm text-white opacity-80 leading-normal mb-10">Stay in the loop with our Digital Horizon
+                newsletter, where we deliver bite-sized insights into the latest digital marketing solutions.</p>
+              <div class="flex flex-col">
+                <input
+                  class="h-12 w-full px-4 py-1 placeholder-gray-700 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full"
+                  type="email" placeholder="Your e-mail..." /><a
+                  class="h-12 inline-flex mt-3 py-1 px-5 items-center justify-center font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200"
+                  href="contact.html">Get in touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap -mb-3 justify-between">
+          <div class="flex items-center mb-3"><a class="inline-block mr-4 text-black hover:text-lime-500" href="#">
+              <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_230_4832)">
+                  <path
+                    d="M11.5481 19.9999V10.8776H14.6088L15.068 7.32147H11.5481V5.05138C11.5481 4.02211 11.8327 3.32067 13.3104 3.32067L15.1919 3.3199V0.139138C14.8665 0.0968538 13.7496 -9.15527e-05 12.4496 -9.15527e-05C9.735 -9.15527e-05 7.87654 1.65687 7.87654 4.69918V7.32147H4.80652V10.8776H7.87654V19.9999H11.5481Z"
+                    fill="currentColor"></path>
+                </g>
+              </svg></a> <a class="inline-block mr-4 text-black hover:text-lime-500" href="#">
+              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
+                  fill="currentColor"></path>
+              </svg></a> <a class="inline-block text-black hover:text-lime-500" href="#">
+              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"
+                  fill="currentColor"></path>
+              </svg></a></div>
+          <p class="text-sm text-gray-500 mb-3 md:mb-0">© 2024 Evanzainfotech. All rights reserved.</p>
+          <div class="text-center">Created by <a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
+              href="https://www.evanzainfotech.cloud" target="_blank">Evanzainfotech</a><span> • Distributed by
+            </span><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="https://www.MJ1999.store"
+              target="_blank">MJ1999</a></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

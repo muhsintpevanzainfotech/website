@@ -9,7 +9,23 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="css/tailwind/tailwind.min.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
+  <script src="https://unpkg.com/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
+  <style>
+    .project-card-container {
+      display: block !important;
+      min-height: 420px;
+      background: #fdfdfd;
+      border-radius: 2rem;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 10px 30px -12px rgba(2, 44, 34, 0.15);
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .project-card-container:hover {
+      box-shadow: 0 20px 40px -12px rgba(2, 44, 34, 0.25);
+    }
+  </style>
   <!-- 10/10 SEO Optimization Start -->
   <meta name="description"
     content="Evanzainfotech is a top-tier digital agency offering expert Website Development, Mobile App Development, SEO setup, and Social Media Management to elevate your online presence." />
@@ -30,6 +46,7 @@
     content="Transform your business with our premier digital services. We specialize in Website Development, App Development, and SEO." />
   <meta name="twitter:image" content="https://www.evanzainfotech.cloud/images/logo-with-letter.png" />
   <!-- 10/10 SEO Optimization End -->
+
 </head>
 
 <body class="antialiased bg-body text-body font-body">
@@ -46,12 +63,13 @@
                 <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium"
                     href="about.html">About us</a></li>
                 <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium"
-                    href="pricing.html">Pricing</a></li>
-                <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium"
                     href="projects.html">Projects</a></li>
                 <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium"
-                    href="contact.html">Contact us</a></li>
-                <li><a class="inline-block text-white hover:text-lime-500 font-medium" href="blog.html">Blog</a></li>
+                    href="pricing.html">Pricing</a></li>
+                <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium"
+                    href="blog.html">Blog</a></li>
+                <li><a class="inline-block text-white hover:text-lime-500 font-medium" href="contact.html">Contact
+                    us</a></li>
               </ul>
               <div class="flex items-center justify-end">
                 <div class="hidden md:block"><a
@@ -78,7 +96,7 @@
             </div>
           </div>
         </nav>
-        <div class="relative pt-18 pb-24 sm:pb-32 lg:pt-36 lg:pb-62">
+        <div class="relative min-h-screen flex items-center justify-center py-24">
           <div class="container mx-auto px-4 relative">
             <div class="max-w-lg xl:max-w-xl mx-auto text-center">
               <h1 class="font-heading text-5xl xs:text-7xl xl:text-8xl tracking-tight text-white mb-8">Empowering Your
@@ -113,12 +131,13 @@
                 <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
                     href="about.html">About us</a></li>
                 <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
-                    href="pricing.html">Pricing</a></li>
-                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
                     href="projects.html">Projects</a></li>
                 <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
-                    href="contact.html">Contact us</a></li>
-                <li><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="blog.html">Blog</a></li>
+                    href="pricing.html">Pricing</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium"
+                    href="blog.html">Blog</a></li>
+                <li><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="contact.html">Contact
+                    us</a></li>
               </ul>
             </div>
             <div class="flex items-center justify-between"><a
@@ -183,7 +202,7 @@
         </div>
       </div>
     </section>
-    <section class="p-4 bg-white" id="solutions">
+    <section class="min-h-screen flex items-center justify-center p-4 lg:p-12 bg-white" id="solutions">
       <div class="pt-16 pb-24 px-5 xs:px-8 xl:px-12 bg-lime-500 rounded-3xl">
         <div class="container mx-auto px-4">
           <div class="flex mb-4 items-center">
@@ -286,7 +305,7 @@
                       d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z"
                       fill="white"></path>
                     <path
-                      d="M23.8425 12.3779C23.9008 12.238 24.0992 12.238 24.1575 12.3779L30.1538 26.7692C31.9835 31.1605 28.7572 36 24 36Lnan nanL24 36C19.2428 36 16.0165 31.1605 17.8462 26.7692L23.8425 12.3779Z"
+                      d="M23.8425 12.3779C23.9008 12.238 24.0992 12.238 24.1575 12.3779L30.1538 26.7692C31.9835 31.1605 28.7572 36 24 36L24 36C19.2428 36 16.0165 31.1605 17.8462 26.7692L23.8425 12.3779Z"
                       fill="#022C22"></path>
                   </svg>
                   <div class="mt-6">
@@ -310,113 +329,89 @@
             <p class="text-lg text-gray-700">Explore how we've helped businesses transform their digital presence with
               innovative solutions.</p>
           </div>
-          <div class="w-full lg:w-auto">
-            <a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 border border-lime-500 hover:border-teal-900 bg-lime-500 hover:bg-white rounded-full transition duration-200"
-              href="projects.html">View All Projects</a>
-          </div>
         </div>
 
-        <!-- Slider Root -->
-        <div x-data="{ 
-          active: 0, 
-          step: 1,
-          total: 4,
-          get visible() { 
-            if (window.innerWidth >= 1024) return 3;
-            if (window.innerWidth >= 640) return 2;
-            return 1;
-          },
-          next() {
-            this.active = (this.active + this.step) % (this.total - this.visible + 1);
-            if (this.active < 0) this.active = 0;
-          },
-          start() {
-            setInterval(() => this.next(), 4000);
-          }
-        }" x-init="start()" class="relative">
-          <div class="overflow-hidden">
-            <div class="flex transition-transform duration-700 ease-in-out"
-              :style="`transform: translateX(-${active * (100 / visible)}%)`">
-              <!-- Project 1 -->
-              <div class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
-                <div
-                  class="group relative h-96 rounded-3xl overflow-hidden shadow-lg transform transition duration-500 hover:-translate-y-2">
-                  <img class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
-                    src="images/projects/ecommerce.png" alt="EcoStore" />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70 transition duration-500 group-hover:opacity-40">
-                  </div>
-                  <div class="absolute bottom-0 left-0 p-8 transform transition duration-500 group-hover:translate-x-2">
-                    <span
-                      class="inline-block py-1 px-3 mb-4 text-xs font-bold text-teal-900 bg-lime-500 rounded-full uppercase">E-commerce</span>
-                    <h3 class="text-2xl font-bold text-white mb-2">EcoStore Branding</h3>
-                    <p class="text-white opacity-80 text-sm">Luxury fashion digital experience.</p>
-                  </div>
-                </div>
+        <!-- Projects Grid -->
+        <div class="flex flex-wrap -mx-4 mb-16">
+          <!-- Project 1 -->
+          <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+            <div class="project-card-container group">
+              <img class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                src="images/projects/ecommerce.png" alt="EcoStore" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 transition duration-500 group-hover:opacity-60">
               </div>
-              <!-- Project 2 -->
-              <div class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
-                <div
-                  class="group relative h-96 rounded-3xl overflow-hidden shadow-lg transform transition duration-500 hover:-translate-y-2">
-                  <img class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
-                    src="images/projects/saas_dashboard.png" alt="SaaSify" />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70 transition duration-500 group-hover:opacity-40">
-                  </div>
-                  <div class="absolute bottom-0 left-0 p-8 transform transition duration-500 group-hover:translate-x-2">
-                    <span
-                      class="inline-block py-1 px-3 mb-4 text-xs font-bold text-teal-900 bg-lime-500 rounded-full uppercase">SaaS</span>
-                    <h3 class="text-2xl font-bold text-white mb-2">SaaSify Analytics</h3>
-                    <p class="text-white opacity-80 text-sm">Modern data visualization dashboard.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Project 3 -->
-              <div class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
-                <div
-                  class="group relative h-96 rounded-3xl overflow-hidden shadow-lg transform transition duration-500 hover:-translate-y-2">
-                  <img class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
-                    src="images/projects/fitness_app.png" alt="FitnessPro" />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70 transition duration-500 group-hover:opacity-40">
-                  </div>
-                  <div class="absolute bottom-0 left-0 p-8 transform transition duration-500 group-hover:translate-x-2">
-                    <span
-                      class="inline-block py-1 px-3 mb-4 text-xs font-bold text-teal-900 bg-lime-500 rounded-full uppercase">Mobile
-                      App</span>
-                    <h3 class="text-2xl font-bold text-white mb-2">FitnessPro Wellness</h3>
-                    <p class="text-white opacity-80 text-sm">Premium fitness tracking application.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Project 4 -->
-              <div class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
-                <div
-                  class="group relative h-96 rounded-3xl overflow-hidden shadow-lg transform transition duration-500 hover:-translate-y-2">
-                  <img class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
-                    src="images/projects/seo_audit.png" alt="SEO Audit" />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70 transition duration-500 group-hover:opacity-40">
-                  </div>
-                  <div class="absolute bottom-0 left-0 p-8 transform transition duration-500 group-hover:translate-x-2">
-                    <span
-                      class="inline-block py-1 px-3 mb-4 text-xs font-bold text-teal-900 bg-lime-500 rounded-full uppercase">SEO
-                      & Marketing</span>
-                    <h3 class="text-2xl font-bold text-white mb-2">GlobalSearch SEO</h3>
-                    <p class="text-white opacity-80 text-sm">Organic growth for tech startups.</p>
-                  </div>
-                </div>
+              <div
+                class="absolute bottom-0 left-0 p-8 w-full transform transition duration-500 group-hover:translate-x-2">
+                <span
+                  class="inline-block py-1 px-4 mb-4 text-xs font-bold text-teal-900 bg-lime-500 rounded-full uppercase tracking-widest">E-commerce</span>
+                <h3 class="text-2xl font-bold text-white mb-2 leading-tight">EcoStore Branding</h3>
+                <p class="text-white opacity-90 text-sm font-medium mb-6">Luxury fashion experience.</p>
+
               </div>
             </div>
           </div>
+          <!-- Project 2 -->
+          <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+            <div class="project-card-container group">
+              <img class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                src="images/projects/saas_dashboard.png" alt="SaaSify" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 transition duration-500 group-hover:opacity-60">
+              </div>
+              <div
+                class="absolute bottom-0 left-0 p-8 w-full transform transition duration-500 group-hover:translate-x-2">
+                <span
+                  class="inline-block py-1 px-4 mb-4 text-xs font-bold text-teal-900 bg-lime-500 rounded-full uppercase tracking-widest">SaaS</span>
+                <h3 class="text-2xl font-bold text-white mb-2 leading-tight">SaaSify Analytics</h3>
+                <p class="text-white opacity-90 text-sm font-medium mb-6">Data visualization dashboard.</p>
 
-          <!-- Slider Controls -->
-          <div class="flex justify-center mt-12 gap-4">
-            <template x-for="i in (total - visible + 1)" :key="i">
-              <button @click="active = i-1" class="w-3 h-3 rounded-full transition-all duration-300"
-                :class="active === i-1 ? 'bg-lime-500 w-8' : 'bg-gray-300'"></button>
-            </template>
+              </div>
+            </div>
           </div>
+          <!-- Project 3 -->
+          <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+            <div class="project-card-container group">
+              <img class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                src="images/projects/fitness_app.png" alt="FitnessPro" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 transition duration-500 group-hover:opacity-60">
+              </div>
+              <div
+                class="absolute bottom-0 left-0 p-8 w-full transform transition duration-500 group-hover:translate-x-2">
+                <span
+                  class="inline-block py-1 px-4 mb-4 text-xs font-bold text-teal-900 bg-lime-500 rounded-full uppercase tracking-widest">Mobile
+                  App</span>
+                <h3 class="text-2xl font-bold text-white mb-2 leading-tight">FitnessPro Wellness</h3>
+                <p class="text-white opacity-90 text-sm font-medium mb-6">Premium fitness tracking.</p>
+
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+            <div class="project-card-container group">
+              <img class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                src="images/projects/seo_audit.png" alt="SEO Audit" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 transition duration-500 group-hover:opacity-60">
+              </div>
+              <div
+                class="absolute bottom-0 left-0 p-8 w-full transform transition duration-500 group-hover:translate-x-2">
+                <span
+                  class="inline-block py-1 px-4 mb-4 text-xs font-bold text-teal-900 bg-lime-500 rounded-full uppercase tracking-widest">SEO
+                  & AI</span>
+                <h3 class="text-2xl font-bold text-white mb-2 leading-tight">GlobalSearch SEO</h3>
+                <p class="text-white opacity-90 text-sm font-medium mb-6">Organic growth for startups.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a class="inline-flex py-4 px-8 items-center justify-center text-lg font-bold text-teal-900 border border-lime-500 hover:border-teal-900 bg-lime-500 hover:bg-white rounded-full transition duration-300"
+            href="projects.html">View All Projects</a>
         </div>
       </div>
     </section>
@@ -690,7 +685,7 @@
     </section> -->
     <div>
       <div>
-        <section>
+        <section class="min-h-screen flex items-center justify-center py-24 lg:py-32">
           <div class="p-4">
             <div
               class="max-w-xl lg:max-w-5xl mx-auto xl:max-w-none px-5 md:px-12 xl:px-24 py-16 bg-teal-900 rounded-2xl">
@@ -725,36 +720,44 @@
               <div class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0">
                 <h3 class="mb-6 font-bold">Platform</h3>
                 <ul>
-                  <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
                       href="index.html#solutions">Solutions</a></li>
-                  <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
                       href="projects.html">Projects</a></li>
-                  <li><a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
                       href="pricing.html">Pricing</a></li>
+                  <li><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="contact.html">Contact
+                      Us</a></li>
                 </ul>
               </div>
               <div class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0">
-                <h3 class="mb-6 font-bold">Resources</h3>
+                <h3 class="mb-6 font-bold">Courses</h3>
                 <ul>
-                  <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
-                      href="blog.html">Blog</a></li>
-                  <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="#">Help
-                      Center</a></li>
-                  <li><a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
-                      href="contact.html">Support</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">MERN Stack</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">Database</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">Mobile App</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">SEO Analysis</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="courses.html">Digital Marketing</a></li>
+                  <li><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="courses.html">Social
+                      Media</a></li>
                 </ul>
               </div>
               <div class="w-full xs:w-1/3 px-4">
                 <h3 class="mb-6 font-bold">Company</h3>
                 <ul>
-                  <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
-                      href="about.html">About</a></li>
-                  <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="#">Our
-                      Mission</a></li>
-                  <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
-                      href="contact.html">Careers</a></li>
-                  <li><a class="inline-block text-gray-600 hover:text-lime-500 font-medium"
-                      href="contact.html">Contact</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="about.html">About Us</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="blog.html">Blog</a></li>
+                  <li class="mb-4"><a class="text-gray-600 hover:text-lime-500 font-medium text-sm"
+                      href="about.html#mission">Our Mission</a></li>
+                  <li><a class="text-gray-600 hover:text-lime-500 font-medium text-sm" href="contact.html">Careers</a>
+                  </li>
                 </ul>
               </div>
             </div>
